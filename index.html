@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCR project</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="data:image/jpeg;base64,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" alt="pic">
+        <h3 class="name">HAMNA HASSAN</h3>
+        <p class="post">front end developer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>HAMNA HASSAN</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt aspernatur fugiat minus enim ullam repudiandae sint sed magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, at.
+    </p>
+    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>about</span> me </h1>
+
+<div class="row">
+
+    <div class="info">
+        <h3> <span> name : </span> HAMNA HASSAN </h3>
+        <h3> <span> age : </span> 20 </h3>
+        <h3> <span> qualification : </span> BTECH </h3>
+        <h3> <span> post : </span> front end developer </h3>
+        <h3> <span> language : </span> ENGLISH </h3>
+        <a href="cv n.pdf"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+    </div>
+
+    <div class="counter">
+
+        <div class="box">
+            <span>2+</span>
+            <h3>Years of Experience</h3>
+        </div>
+
+        <div class="box">
+            <span>100+</span>
+            <h3>Project completed</h3>
+        </div>
+
+        <div class="box">
+            <span>430+</span>
+            <h3>Happy clients</h3>
+        </div>
+
+        <div class="box">
+            <span>12+</span>
+            <h3>Awards won</h3>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<h1 class="heading"> My <span>Education</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2016</span>
+        <h3>Front end development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2017</span>
+        <h3>Front end development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2018</span>
+        <h3>Front end development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019</span>
+        <h3>Front end development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2020</span>
+        <h3>Front end development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021</span>
+        <h3>Front end development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- education section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> My <span>Portfolio</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-psd/social-media-marketing-agency-web-design-template_23-2149073401.jpg?size=626&ext=jpg&ga=GA1.1.149240876.1647063688" alt="social">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-vector/flat-cms-web-template_23-2148806163.jpg?size=626&ext=jpg&ga=GA1.1.149240876.1647063688" alt="website">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-vector/set-modern-website-landing-page-design-templates-mobile-phone-tablet-with-gallery-articles-contact-form-flat-isolated-illustration_1284-60948.jpg?size=626&ext=jpg&ga=GA1.1.149240876.1647063688" alt="phones">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-psd/web-template-burger-restaurant_23-2148485059.jpg?size=626&ext=jpg&ga=GA1.2.149240876.1647063688" alt="phone">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-vector/flat-cms-content-landing-page_23-2148806201.jpg?size=626&ext=jpg&ga=GA1.2.149240876.1647063688" alt="food">
+    </div>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-psd/various-web-printable-templates-with-screen_23-2148450117.jpg?size=626&ext=jpg&ga=GA1.2.149240876.1647063688" alt="lap">
+    </div>
+
+</div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> me </h1>
+
+<div class="row">
+
+    <div class="content">
+
+        <h3 class="title">contact info</h3>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> projects.tcrinnovation@gmail.com </h3>
+            <h3> <i class="fas fa-phone"></i> +123-456-7890 </h3>
+            <h3> <i class="fas fa-phone"></i> +111-222-3333 </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> Chennai, india - 400104. </h3>
+        </div>
+
+    </div>
+
+    <form action="">
+
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="text" placeholder="project" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+<button type="submit" class="btn" > send <i class="fas fa-paper-plane"></i> </button>
+
+    </form>
+
+</div>
+<br>
+<h1 style="text-align:center">Want to know about my Company?</h1>
+<div class ="signup">
+    <div class="leftbox">
+        <h1>Sign Up</h1>
+        <input type="text" class="input-box"placeholder="UserName">
+        <input type="email" class="input-box"placeholder="Email">
+        <input type="password" class="input-box"placeholder="Enter password">
+        <input type="password" class="input-box"placeholder="Re-enter password">
+<div class="or">OR</div>
+        <a href="https://tcrinnovation.co.in/">
+        <input type="submit" class="submitbox" placeholder="Sign in" ></a>
+    </div>
+    <div class="rightbox">
+        <span class="right-title">Sign up with<br>Social Network</span>
+    <a htef="https://www.instagram.com/tcr_innovation/?utm_medium=copy_link"><button class="social facebook">Log in with Facebook</button></a>
+    <a href="https://www.linkedin.com/company/tcr-innovation"><button class="social twitter">Log in with Twitter</button></a>
+    <a href="https://tcrinnovation.co.in/"> <button class="social google">Log in with Google></button></a>
+    </div>
+<div class="or">OR</div>
+</div>
+
+
+</section>
+
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <img src="scroll-top-img.png" alt="airoplane">
+</a>
+<footer>
+    <p class="text-white tm-footer-text">
+       Copyright &copy; 2022 TCR Innovation . Design:<a href="hamnahassanvm@gmail.com"class="footer-link">HAMNA HASSAN </a>
+    </p>
+</footer>
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+
+</body>
+</html>
